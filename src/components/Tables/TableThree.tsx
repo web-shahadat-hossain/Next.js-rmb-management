@@ -54,15 +54,15 @@ const TableThree = async () => {
                     <p className="text-black dark:text-white">{data.rmb}</p>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
-                    <p className=" text-blue-700 dark:text-white">
-                      {data?.profit}
-                    </p>
-                  </td>
-                  {/* <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
                     <p className="text-black dark:text-white">
                       {new Date(data.createdAt).toLocaleDateString()}
                     </p>
-                  </td> */}
+                  </td>
+                  <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
+                    <p className=" text-blue-700 dark:text-white">
+                      {data?.profit.toFixed(2)}
+                    </p>
+                  </td>
                 </tr>
               ))}
             </tbody>
