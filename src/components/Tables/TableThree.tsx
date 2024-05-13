@@ -2,6 +2,8 @@ import getSellHistory from "@/lib/getSellHistory";
 
 const TableThree = async () => {
   const buyHistoryData = await getSellHistory();
+  const reversedSellHistoryData =
+    buyHistoryData?.data?.reverse().slice(0, 10) || [];
 
   return (
     <div className="rounded-sm border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-4.5 xl:pb-1">
@@ -35,7 +37,7 @@ const TableThree = async () => {
               </tr>
             </thead>
             <tbody>
-              {buyHistoryData?.data?.map((data: any, key: number) => (
+              {reversedSellHistoryData?.map((data: any, key: number) => (
                 <tr key={key}>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">

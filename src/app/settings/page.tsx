@@ -64,8 +64,8 @@ const Settings = () => {
                           type="text"
                           name="fullName"
                           id="fullName"
-                          placeholder="Devid Jhon"
-                          defaultValue="Devid Jhon"
+                          placeholder="Md Dalim"
+                          defaultValue="Md Dalim"
                         />
                       </div>
                     </div>
@@ -82,8 +82,8 @@ const Settings = () => {
                         type="text"
                         name="phoneNumber"
                         id="phoneNumber"
-                        placeholder="+990 3343 7865"
-                        defaultValue="+990 3343 7865"
+                        placeholder="01960602760"
+                        defaultValue="01960602760"
                       />
                     </div>
                   </div>
@@ -126,8 +126,8 @@ const Settings = () => {
                         type="email"
                         name="emailAddress"
                         id="emailAddress"
-                        placeholder="devidjond45@gmail.com"
-                        defaultValue="devidjond45@gmail.com"
+                        placeholder="mdd80901@gmail.com "
+                        defaultValue="mdd80901@gmail.com"
                       />
                     </div>
                   </div>
@@ -144,8 +144,8 @@ const Settings = () => {
                       type="text"
                       name="Username"
                       id="Username"
-                      placeholder="devidjhon24"
-                      defaultValue="devidjhon24"
+                      placeholder="dalim24"
+                      defaultValue="dalim24"
                     />
                   </div>
 
@@ -229,7 +229,9 @@ const Settings = () => {
                   <div className="mb-4 flex items-center gap-3">
                     <div className="h-14 w-14 rounded-full">
                       <Image
-                        src={"/images/user/user-03.png"}
+                        src={
+                          "https://res.cloudinary.com/dpcxwe6gm/image/upload/v1714322378/377849308_306113372067415_2244416347661932831_n_zwhcfb.jpg"
+                        }
                         width={55}
                         height={55}
                         alt="User"

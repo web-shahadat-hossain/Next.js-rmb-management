@@ -10,3 +10,5 @@ export default async function getBalanceHistory() {
 
   return result.json();
 }
+
+// https://business-management-back-end.onrender.com

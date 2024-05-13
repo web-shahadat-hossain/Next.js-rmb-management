@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const TablesPage = async () => {
   const balanceData = await getBalanceHistory();
-
+  const reversedBalanceData = balanceData?.data?.reverse() || [];
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Buy History" />
@@ -45,7 +45,7 @@ const TablesPage = async () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {balanceData?.data?.map((data: any, key: number) => (
+                  {reversedBalanceData?.map((data: any, key: number) => (
                     <tr key={key}>
                       <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                         <h5 className="font-medium text-black dark:text-white">
