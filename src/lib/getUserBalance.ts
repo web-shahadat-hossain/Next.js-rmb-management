@@ -1,6 +1,6 @@
-export default async function getBalanceHistory() {
+export default async function getUserBalanceHistory() {
   const result = await fetch(
-    "https://business-management-back-end.onrender.com/api/v1/balance",
+    "https://business-management-back-end.onrender.com/api/v1/create/balance",
     {
       next: {
         revalidate: 10,

@@ -59,6 +59,18 @@ const FormLayout = () => {
               <div className="p-6.5">
                 <div className="mb-4.5">
                   <label className="mb-3 block text-sm font-medium text-black dark:text-white">
+                    Select User Name
+                  </label>
+                  <select
+                    name="userName"
+                    className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                  >
+                    <option value="Dalim24">Md Dalim </option>
+                    <option value="Taher24">Abu Taher</option>
+                  </select>
+                </div>
+                <div className="mb-4.5">
+                  <label className="mb-3 block text-sm font-medium text-black dark:text-white">
                     Full Name <span className="text-meta-1">*</span>
                   </label>
                   <input
