@@ -76,7 +76,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             priority
           /> */}
           <span className=" text-center  text-[30px] font-semibold text-white">
-            Webnex IT
+            NT
           </span>
         </Link>
 
