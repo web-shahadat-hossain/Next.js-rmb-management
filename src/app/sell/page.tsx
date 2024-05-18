@@ -40,6 +40,7 @@ const FormLayout = () => {
 
       if (responseData.success) {
         toast.success("Sell Success!!");
+        e.target.reset();
         setLoad(false);
       } else {
         toast.success(responseData.message);

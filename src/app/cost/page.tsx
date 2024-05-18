@@ -31,6 +31,7 @@ const FormLayout = () => {
       if (responseData.success) {
         toast.success("Cost Success!!");
         setLoad(false);
+        e.target.reset();
       } else {
         toast.success(responseData.message);
         setLoad(false);
